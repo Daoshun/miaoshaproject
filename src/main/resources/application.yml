@@ -1,4 +1,18 @@
 server:
   port: 8080
 mybatis:
-  config-location: classpath:mapping/*.xml
+  mapper-locations: classpath:mapping/*.xml
+spring:
+  jpa:
+    database: oracle
+  datasource:
+    url: jdbc:oracle:thin:@10.22.210.22:1521/daoshun
+    password: daoshun
+    username: scott
+    #    url: jdbc:oracle:thin:@10.22.210.23:1521/ds
+    #    password: daoshun
+    #    username: system
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+  profiles:
+    active: dev
