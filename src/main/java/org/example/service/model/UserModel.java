@@ -8,9 +8,9 @@ public class UserModel {
 
     private Integer id;
     private String name;
-    private Byte gender;
-    private String age;
-    private String telphone;
+    private Integer gender;
+    private Integer age;
+    private Integer telphone;
     private String registerMode;
     private String thirdPartyId;
 
@@ -40,27 +40,27 @@ public class UserModel {
         this.name = name;
     }
 
-    public Byte getGender() {
+    public Integer getGender() {
         return gender;
     }
 
-    public void setGender(Byte gender) {
+    public void setGender(Integer gender) {
         this.gender = gender;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
-    public String getTelphone() {
+    public Integer getTelphone() {
         return telphone;
     }
 
-    public void setTelphone(String telphone) {
+    public void setTelphone(Integer telphone) {
         this.telphone = telphone;
     }
 
